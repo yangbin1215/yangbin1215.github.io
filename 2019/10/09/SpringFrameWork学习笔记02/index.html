@@ -18,7 +18,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yangbin1215.github.io/2019/10/09/SpringFrameWork学习笔记02/%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86%E7%A4%BA%E6%84%8F%E5%9B%BE.png">
 <meta property="og:image" content="http://yangbin1215.github.io/2019/10/09/SpringFrameWork学习笔记02/2019-10-09_21-38-33.png">
-<meta property="og:updated_time" content="2019-10-10T02:16:36.863Z">
+<meta property="og:updated_time" content="2019-10-10T03:16:32.726Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringFrameWork学习笔记02">
 <meta name="twitter:description" content="摘要 代理模式 什么是代理模式 静态代理模式 动态代理模式">
@@ -168,20 +168,14 @@
     </h1>
   
 
-        <!--显示阅读次数-->
         
-          <br/>
-          <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
-          <span class="icon-sort"></span>
-          <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
-                    阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+        
+        
+        
+          <span class="archive-article-date">
+            阅读量 <span id="busuanzi_value_page_pv"></span>
           </span>
-          </a>
-        
-        <!--显示阅读次数完毕-->
-        
-        
-        
+      
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -228,7 +222,7 @@
 </li>
 </ul>
 <h4 id="代理模式与Spring的联系"><a href="#代理模式与Spring的联系" class="headerlink" title="代理模式与Spring的联系"></a>代理模式与Spring的联系</h4><font size="4" color="Brown">
-代理模式实现了有别与纵向开发的横向编程，横向编程可以在不该吧原有代码的基础上进行增强。Spring AOP的底层实现机制便是横向编程。</font>
+代理模式实现了有别与纵向开发的横向编程，横向编程可以在不改变原有代码的基础上进行增强。Spring AOP的底层实现机制便是横向编程。</font>
 
 <h3 id="3、动态代理模式"><a href="#3、动态代理模式" class="headerlink" title="3、动态代理模式"></a>3、动态代理模式</h3>
       
@@ -373,6 +367,28 @@
   
 
   
+  
+    <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: 'e5413bdc82fff0b34683',
+  clientSecret: '020f1b7cf90e2847bd17ffe333fc68ddf899fe51',
+  repo: 'yangbin1215.github.io',
+  owner: 'yangbin1215',
+  admin: ['erbiduo'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
+
+
+
 
 
           </div>
@@ -384,9 +400,7 @@
     	<div class="footer-left">
     		&copy; 2019 朱雀桥边野草花
     	</div>
-      	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
+		<span id="busuanzi_container_site_pv">    本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
     </div>
   </div>
 </footer>

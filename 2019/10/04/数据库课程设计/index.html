@@ -27,6 +27,10 @@
     <link rel="icon" href="/assets/head.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
+  
+    <link rel="stylesheet" href="/lib/gitalk/gitalk.css">
+    <script src="/lib/gitalk/gitalk.min.js"></script>
+  
   <style type="text/css">
   
     #container.show {
@@ -156,6 +160,24 @@
             
 <article id="post-数据库课程设计" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+  
+    <div class="gitalk">
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+      const gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: 'MyBlogComment',
+          owner: 'yangbin1215',
+          admin: ['yangbin1215'],
+          id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+          distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+  </script>
+</div>
+    
     
       <header class="article-header">
         
@@ -351,26 +373,22 @@
 
   
   
-    <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+    <div class="gitalk">
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+      const gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: 'MyBlogComment',
+          owner: 'yangbin1215',
+          admin: ['yangbin1215'],
+          id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+          distractionFreeMode: false  // Facebook-like distraction free mode
+      })
 
-<script>
-var gitalk = new Gitalk({
-  clientID: 'e5413bdc82fff0b34683',
-  clientSecret: '020f1b7cf90e2847bd17ffe333fc68ddf899fe51',
-  repo: 'https://github.com/yangbin1215/yangbin1215.github.io',
-  owner: 'yangbin1215',
-  admin: ['yangbin1215'],
-  id: md5(window.location.pathname),
-  distractionFreeMode: true
-})
-
-gitalk.render('gitalk-container')
-</script>
-
-
+      gitalk.render('gitalk-container')
+  </script>
+</div>
 
 
 

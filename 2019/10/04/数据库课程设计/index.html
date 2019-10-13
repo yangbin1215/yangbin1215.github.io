@@ -89,14 +89,17 @@
 <meta name="keywords" content="学习笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库课程设计">
-<meta property="og:url" content="/2019/10/04/数据库课程设计/index.html">
+<meta property="og:url" content="http://yangbin1215.github.io/2019/10/04/数据库课程设计/index.html">
 <meta property="og:site_name" content="朱雀桥边野草花">
 <meta property="og:description" content="摘要 课设选题 需求分析 概念结构设计 逻辑结构设计 物理结构设计 数据库实施 数据库运行与维护">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-12T11:47:56.386Z">
+<meta property="og:image" content="http://yangbin1215.github.io/2019/10/04/数据库课程设计/%E6%A0%A1%E5%8F%8B%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
+<meta property="og:image" content="http://yangbin1215.github.io/2019/10/04/数据库课程设计/%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84%E5%9B%BE.png">
+<meta property="og:updated_time" content="2019-10-13T11:36:35.497Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库课程设计">
 <meta name="twitter:description" content="摘要 课设选题 需求分析 概念结构设计 逻辑结构设计 物理结构设计 数据库实施 数据库运行与维护">
+<meta name="twitter:image" content="http://yangbin1215.github.io/2019/10/04/数据库课程设计/%E6%A0%A1%E5%8F%8B%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
 
 
 
@@ -126,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="/2019/10/04/数据库课程设计/">
+  <link rel="canonical" href="http://yangbin1215.github.io/2019/10/04/数据库课程设计/">
 
 
 
@@ -311,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="/2019/10/04/数据库课程设计/">
+    <link itemprop="mainEntityOfPage" href="http://yangbin1215.github.io/2019/10/04/数据库课程设计/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yangbin1215">
@@ -417,8 +420,22 @@
 </ul>
 <hr>
 <h2 id="课程设计选题"><a href="#课程设计选题" class="headerlink" title="课程设计选题"></a>课程设计选题</h2><ul>
-<li><strong>题目：高校篇之校友信息管理系统<br>涉及：校友信息、校友留言、校友论坛、通知信息等实体。</strong></li>
-<li><strong>课题验收的主要参考指标：<br>    需求分析<br>    数据库设计（结构,优化）<br>    数据完整性<br>    安全性<br>    视图<br>    触发器<br>    存储过程<br>    索引<br>    系统功能<br>    用户界面友好性</strong></li>
+<li><strong>题目：高校篇之校友信息管理系统</strong></li>
+<li><strong>课题验收的主要参考指标：</strong><ul>
+<li>需求分析</li>
+<li>数据库设计（结构,优化）</li>
+<li>数据完整性</li>
+<li>安全性</li>
+<li>视图</li>
+<li>触发器</li>
+<li>存储过程</li>
+<li>索引</li>
+<li>系统功能</li>
+<li>用户界面友好性</li>
+</ul>
+</li>
+</ul>
+<ul>
 <li><strong>其他：</strong><ul>
 <li><strong>数据库平台：MySql 5.7.27</strong></li>
 <li><strong>开发框架：Spring+SpringMVC+Mybatis</strong></li>
@@ -426,7 +443,16 @@
 </li>
 </ul>
 <hr>
-<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h3 id="1、"><a href="#1、" class="headerlink" title="1、"></a>1、</h3>
+<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h3 id="1、需求说明"><a href="#1、需求说明" class="headerlink" title="1、需求说明"></a>1、需求说明</h3><blockquote>
+<p>   高校篇之校友信息管理系统<br>    涉及：校友信息、校友留言、校友论坛、通知信息等实体。</p>
+</blockquote>
+<h3 id="2、需求理解"><a href="#2、需求理解" class="headerlink" title="2、需求理解"></a>2、需求理解</h3><ol>
+<li>校友与管理员都可以修改个人信息，浏览校友论坛并留言。</li>
+<li>管理员负责管理本校的校友，管理论坛留言和发布通知。</li>
+</ol>
+<p><strong>校友信息管理系统的流程图：</strong><br><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E6%A0%A1%E5%8F%8B%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="流程图"></p>
+<h3 id="系统结构图"><a href="#系统结构图" class="headerlink" title="系统结构图"></a>系统结构图</h3><p><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84%E5%9B%BE.png" alt="系统结构图"></p>
+
       
     </div>
     
@@ -644,7 +670,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#课程设计选题"><span class="nav-number"></span> <span class="nav-text">课程设计选题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#需求分析"><span class="nav-number"></span> <span class="nav-text">需求分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、"><span class="nav-number">1.</span> <span class="nav-text">1、</span></a></li></ol></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#课程设计选题"><span class="nav-number"></span> <span class="nav-text">课程设计选题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#需求分析"><span class="nav-number"></span> <span class="nav-text">需求分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、需求说明"><span class="nav-number">1.</span> <span class="nav-text">1、需求说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、需求理解"><span class="nav-number">2.</span> <span class="nav-text">2、需求理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统结构图"><span class="nav-number">3.</span> <span class="nav-text">系统结构图</span></a></li></ol></li></div>
             
 
           </div>

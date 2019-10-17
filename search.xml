@@ -316,7 +316,20 @@
 </ol>
 <p><strong>校友信息管理系统的流程图：</strong><br><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E6%A0%A1%E5%8F%8B%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="流程图"></p>
 <h3 id="系统结构图"><a href="#系统结构图" class="headerlink" title="系统结构图"></a>系统结构图</h3><p><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84%E5%9B%BE.png" alt="系统结构图"></p>
-]]></content>
+<h3 id="数据字典"><a href="#数据字典" class="headerlink" title="数据字典"></a>数据字典</h3><ol>
+<li><p><strong>数据项</strong><br><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E6%95%B0%E6%8D%AE%E9%A1%B9.png" alt="数据项"></p>
+</li>
+<li><p><strong>数据结构</strong><br><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.png" alt="数据结构"></p>
+</li>
+<li><p><strong>数据流</strong><br> <img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E6%95%B0%E6%8D%AE%E6%B5%81.png" alt="数据流"></p>
+</li>
+<li><p><strong>数据存储</strong><br> <img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8.png" alt="数据存储"></p>
+</li>
+<li><p><strong>处理过程</strong><br> <img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B.png" alt="处理过程"></p>
+</li>
+</ol>
+<h3 id="数据流图"><a href="#数据流图" class="headerlink" title="数据流图"></a>数据流图</h3><h4 id="一级数据流图"><a href="#一级数据流图" class="headerlink" title="一级数据流图"></a>一级数据流图</h4><p><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E4%B8%80%E7%BA%A7%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE.png" alt="一级数据流图"></p>
+<h4 id="二级数据流图"><a href="#二级数据流图" class="headerlink" title="二级数据流图"></a>二级数据流图</h4>]]></content>
       <categories>
         <category>课程设计</category>
       </categories>

@@ -329,7 +329,13 @@
 </li>
 </ol>
 <h3 id="数据流图"><a href="#数据流图" class="headerlink" title="数据流图"></a>数据流图</h3><h4 id="一级数据流图"><a href="#一级数据流图" class="headerlink" title="一级数据流图"></a>一级数据流图</h4><p><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E4%B8%80%E7%BA%A7%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE.png" alt="一级数据流图"></p>
-<h4 id="二级数据流图"><a href="#二级数据流图" class="headerlink" title="二级数据流图"></a>二级数据流图</h4>]]></content>
+<h4 id="二级数据流图"><a href="#二级数据流图" class="headerlink" title="二级数据流图"></a>二级数据流图</h4><ul>
+<li><p>普通用户操作分数据流图<br>  <img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E4%BA%8C%E7%BA%A7%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE2.png" alt="二级数据流图2"></p>
+</li>
+<li><p>管理员操作分数据流图<br>  <img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E4%BA%8C%E7%BA%A7%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE3.png" alt="二级数据流图3"></p>
+</li>
+</ul>
+]]></content>
       <categories>
         <category>课程设计</category>
       </categories>

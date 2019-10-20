@@ -335,7 +335,12 @@
 <li><p>管理员操作分数据流图<br>  <img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E4%BA%8C%E7%BA%A7%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE3.png" alt="二级数据流图3"></p>
 </li>
 </ul>
-]]></content>
+<hr>
+<h2 id="概念结构设计"><a href="#概念结构设计" class="headerlink" title="概念结构设计"></a>概念结构设计</h2><h3 id="1、分E-R图"><a href="#1、分E-R图" class="headerlink" title="1、分E-R图"></a>1、分E-R图</h3><p><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E5%88%86E-R%E5%9B%BE.png" alt="分E-R图"></p>
+<h3 id="2、局部E-R图"><a href="#2、局部E-R图" class="headerlink" title="2、局部E-R图"></a>2、局部E-R图</h3><p><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E5%B1%80%E9%83%A8E-R%E5%9B%BE.png" alt="局部E-R图"></p>
+<h3 id="3、总E-R图"><a href="#3、总E-R图" class="headerlink" title="3、总E-R图"></a>3、总E-R图</h3><p><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E6%80%BBE-R%E5%9B%BE.png" alt="总E-R图"></p>
+<hr>
+<h2 id="逻辑结构设计"><a href="#逻辑结构设计" class="headerlink" title="逻辑结构设计"></a>逻辑结构设计</h2><h3 id="1、E-R图想关系模型转换"><a href="#1、E-R图想关系模型转换" class="headerlink" title="1、E-R图想关系模型转换"></a>1、E-R图想关系模型转换</h3>]]></content>
       <categories>
         <category>课程设计</category>
       </categories>

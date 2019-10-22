@@ -340,7 +340,33 @@
 <h3 id="2、局部E-R图"><a href="#2、局部E-R图" class="headerlink" title="2、局部E-R图"></a>2、局部E-R图</h3><p><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E5%B1%80%E9%83%A8E-R%E5%9B%BE.png" alt="局部E-R图"></p>
 <h3 id="3、总E-R图"><a href="#3、总E-R图" class="headerlink" title="3、总E-R图"></a>3、总E-R图</h3><p><img src="//yangbin1215.github.io/2019/10/04/数据库课程设计/%E6%80%BBE-R%E5%9B%BE.png" alt="总E-R图"></p>
 <hr>
-<h2 id="逻辑结构设计"><a href="#逻辑结构设计" class="headerlink" title="逻辑结构设计"></a>逻辑结构设计</h2><h3 id="1、E-R图想关系模型转换"><a href="#1、E-R图想关系模型转换" class="headerlink" title="1、E-R图想关系模型转换"></a>1、E-R图想关系模型转换</h3>]]></content>
+<h2 id="逻辑结构设计"><a href="#逻辑结构设计" class="headerlink" title="逻辑结构设计"></a>逻辑结构设计</h2><h3 id="1、关系模式"><a href="#1、关系模式" class="headerlink" title="1、关系模式"></a>1、关系模式</h3><p>从上述总E-R图可以转换出一下四个</p>
+<ol>
+<li><p><strong>留言（<u>留言编号</u>，留言日期，留言内容，学校编号）</strong><br> 此为留言实体对应的关系模式，留言编号为该关系模式的主码，学校编号为该关系模式的外码。</p>
+</li>
+<li><p><strong>评论（<u>评论编号</u>，评论日期，评论内容，留言编号）</strong><br> 此为评论实体对应的关系模式，评论编号为该关系模式的主码，留言编号为该关系模式的外码。</p>
+</li>
+<li><p><strong>学校论坛（<u>学校编号</u>，学校名称）</strong><br>此为学校论坛实体对应的关系模式，学校编号为该关系模式的主码，学校名称为该关系模式的候选码。</p>
+</li>
+<li><p><strong>用户（<u>用户编号</u>，姓名，性别，毕业年份，管理员标识，学校编号）</strong><br>此为用户实体对应的关系模式，用户编号为该关系模式的主码，学校编号为该关系模式的外码。</p>
+</li>
+<li><p><strong>通知（<u>通知编号</u>，通知日期，通知内容，用户编号，学校编号）</strong><br>此为通知实体对应的关系模式，通知编号为该关系模式的主码，用户编号和学校编号为该关系模式的外码。</p>
+</li>
+</ol>
+<h3 id="2、数据模型的优化"><a href="#2、数据模型的优化" class="headerlink" title="2、数据模型的优化"></a>2、数据模型的优化</h3><ol>
+<li><p>留言（<u>留言编号</u>，留言日期，留言内容，学校编号）<br> 代码表示Message（M_id，Mdate，Mcontent，S_id）<br> 留言关系中存在的函数依赖为 M_id–&gt;Mdate，M_id–&gt;Mcontent，M_id–&gt;S_id。<br> 留言的编号为主码，留言的日期、内容以及所属的学校论坛编号均完全函数依赖于主码，符合第二范式。留言关系模式中不存在非主属性传递函数依赖于码“留言编号”，符合第三范式。留言关系模式中的每一个决定因素都包含码“留言编号”，符合BCNF。</p>
+</li>
+<li><p>评论（<u>评论编号</u>，评论日期，评论内容，留言编号）n<br> 代码表示Comment（C_id，Cdate，Ccontent，M_id）<br> 评论关系中存在的函数依赖为 C_id–&gt;Cdate，C_id–&gt;Ccontent，C_id–&gt;M_id。<br> 评论的编号为主码，评论的日期、内容以及所属的留言编号均完全函数依赖于主码，符合第二范式。评论关系模式中不存在非主属性传递函数依赖于码“评论编号”，符合第三范式。评论关系模式中的每一个决定因素都包含码“评论编号”，符合BCNF。</p>
+</li>
+<li><p>学校论坛（<u>学校编号</u>，学校名称）<br>  代码表示SchoolForum（S_id，Sname）<br> 学校论坛关系中存在的函数依赖为 S_id–&gt;Sname，Sname–&gt;S_id。<br> 学校的编号为主码，学校的编号和名称都是候选码，可以相互决定，符合第二范式。学校论坛关系模式中不存在非主属性传递函数依赖于码“学校编号”，符合第三范式。学校论坛关系模式中的每一个决定因素都包含码“学校编号”，符合BCNF。</p>
+</li>
+<li><p>用户（<u>用户编号</u>，姓名，性别，毕业年份，管理员标识，学校编号）<br> 代码表示User（U_id，Uname，Usex，GraduateYear，Admin，S_id）<br> 评论关系中存在的函数依赖为 U_id–&gt;Uname，U_id–&gt;Usex，U_id–&gt;GraduateYear，U_id–&gt;Admin，U_id–&gt;S_id。<br> 用户的编号为主码，用户的姓名、性别、毕业年份，管理员标识以及所属的学校编号均完全函数依赖于主码，符合第二范式。用户关系模式中不存在非主属性传递函数依赖于码“用户编号”，符合第三范式。用户关系模式中的每一个决定因素都包含码“用户编号”，符合BCNF。</p>
+</li>
+<li><p>通知（<u>通知编号</u>，通知日期，通知内容，用户编号，学校编号）<br> 代码表示Inform（I_id，Idate，Icontent，U_id，S_id）<br> 通知关系中存在的函数依赖为 I_id–&gt;Idate，I_id–&gt;IContent，I_id–&gt;U_id，I_id–&gt;S_id。<br> 通知的编号为主码，通知的日期、内容、发布人编号以及所属的学校论坛编号均完全函数依赖于主码，符合第二范式。通知关系模式中不存在非主属性传递函数依赖于码“通知编号”，符合第三范式。通知关系模式中的每一个决定因素都包含码“通知编号”，符合BCNF。</p>
+</li>
+</ol>
+<h3 id="3、设计用户子模式"><a href="#3、设计用户子模式" class="headerlink" title="3、设计用户子模式"></a>3、设计用户子模式</h3><hr>
+<h2 id="物理结构设计"><a href="#物理结构设计" class="headerlink" title="物理结构设计"></a>物理结构设计</h2><h3 id="1、基本表及其SQL语句"><a href="#1、基本表及其SQL语句" class="headerlink" title="1、基本表及其SQL语句"></a>1、基本表及其SQL语句</h3><h3 id="2、增、删、改、查操作及其SQL语句"><a href="#2、增、删、改、查操作及其SQL语句" class="headerlink" title="2、增、删、改、查操作及其SQL语句"></a>2、增、删、改、查操作及其SQL语句</h3>]]></content>
       <categories>
         <category>课程设计</category>
       </categories>

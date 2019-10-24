@@ -106,7 +106,7 @@
 <meta property="og:image" content="http://yangbin1215.github.io/2019/10/04/数据库课程设计/%E5%88%86E-R%E5%9B%BE.png">
 <meta property="og:image" content="http://yangbin1215.github.io/2019/10/04/数据库课程设计/%E5%B1%80%E9%83%A8E-R%E5%9B%BE.png">
 <meta property="og:image" content="http://yangbin1215.github.io/2019/10/04/数据库课程设计/%E6%80%BBE-R%E5%9B%BE.png">
-<meta property="og:updated_time" content="2019-10-22T10:26:58.613Z">
+<meta property="og:updated_time" content="2019-10-24T14:34:01.987Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库课程设计">
 <meta name="twitter:description" content="摘要 课设选题 需求分析 概念结构设计 逻辑结构设计 物理结构设计 数据库实施 数据库运行与维护">
@@ -507,7 +507,7 @@
 </li>
 <li><p>学校论坛（<u>学校编号</u>，学校名称）<br>  代码表示SchoolForum（S_id，Sname）<br> 学校论坛关系中存在的函数依赖为 S_id–&gt;Sname，Sname–&gt;S_id。<br> 学校的编号为主码，学校的编号和名称都是候选码，可以相互决定，符合第二范式。学校论坛关系模式中不存在非主属性传递函数依赖于码“学校编号”，符合第三范式。学校论坛关系模式中的每一个决定因素都包含码“学校编号”，符合BCNF。</p>
 </li>
-<li><p>用户（<u>用户编号</u>，姓名，性别，毕业年份，管理员标识，学校编号）<br> 代码表示User（U_id，Uname，Usex，GraduateYear，Admin，S_id）<br> 评论关系中存在的函数依赖为 U_id–&gt;Uname，U_id–&gt;Usex，U_id–&gt;GraduateYear，U_id–&gt;Admin，U_id–&gt;S_id。<br> 用户的编号为主码，用户的姓名、性别、毕业年份，管理员标识以及所属的学校编号均完全函数依赖于主码，符合第二范式。用户关系模式中不存在非主属性传递函数依赖于码“用户编号”，符合第三范式。用户关系模式中的每一个决定因素都包含码“用户编号”，符合BCNF。</p>
+<li><p>用户（<u>用户编号</u>，姓名，性别，登录密码，毕业年份，管理员标识，学校编号）<br> 代码表示User（U_id，Uname，Usex，Password，GraduateYear，Admin，S_id）<br> 评论关系中存在的函数依赖为 U_id–&gt;Uname，U_id–&gt;Usex，U_id–&gt;Password，U_id–&gt;GraduateYear，U_id–&gt;Admin，U_id–&gt;S_id。<br> 用户的编号为主码，用户的姓名、性别、毕业年份，管理员标识以及所属的学校编号均完全函数依赖于主码，符合第二范式。用户关系模式中不存在非主属性传递函数依赖于码“用户编号”，符合第三范式。用户关系模式中的每一个决定因素都包含码“用户编号”，符合BCNF。</p>
 </li>
 <li><p>通知（<u>通知编号</u>，通知日期，通知内容，用户编号，学校编号）<br> 代码表示Inform（I_id，Idate，Icontent，U_id，S_id）<br> 通知关系中存在的函数依赖为 I_id–&gt;Idate，I_id–&gt;IContent，I_id–&gt;U_id，I_id–&gt;S_id。<br> 通知的编号为主码，通知的日期、内容、发布人编号以及所属的学校论坛编号均完全函数依赖于主码，符合第二范式。通知关系模式中不存在非主属性传递函数依赖于码“通知编号”，符合第三范式。通知关系模式中的每一个决定因素都包含码“通知编号”，符合BCNF。</p>
 </li>

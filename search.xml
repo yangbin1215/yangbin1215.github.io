@@ -18,7 +18,15 @@
 <li>在时间允许的情况下，适当考虑页面的美观；</li>
 <li>熟悉脚本页面与数据库的多种连接方法。</li>
 </ol>
-<h4 id="3、环境说明"><a href="#3、环境说明" class="headerlink" title="3、环境说明"></a>3、环境说明</h4><h2 id="2、需求分析"><a href="#2、需求分析" class="headerlink" title="2、需求分析"></a>2、需求分析</h2><h4 id="1、业务流程"><a href="#1、业务流程" class="headerlink" title="1、业务流程"></a>1、业务流程</h4><h4 id="2、系统功能"><a href="#2、系统功能" class="headerlink" title="2、系统功能"></a>2、系统功能</h4><h2 id="3、概念结构设计"><a href="#3、概念结构设计" class="headerlink" title="3、概念结构设计"></a>3、概念结构设计</h2><h2 id="4、逻辑结构设计"><a href="#4、逻辑结构设计" class="headerlink" title="4、逻辑结构设计"></a>4、逻辑结构设计</h2><h2 id="5、物理结构设计"><a href="#5、物理结构设计" class="headerlink" title="5、物理结构设计"></a>5、物理结构设计</h2>]]></content>
+<h4 id="3、环境说明"><a href="#3、环境说明" class="headerlink" title="3、环境说明"></a>3、环境说明</h4><h2 id="2、需求分析"><a href="#2、需求分析" class="headerlink" title="2、需求分析"></a>2、需求分析</h2><h4 id="1、业务流程"><a href="#1、业务流程" class="headerlink" title="1、业务流程"></a>1、业务流程</h4><ol>
+<li>登录系统。选择合适的身份，根据登录的用户名和密码进行登录。</li>
+<li>用户系统。用户进行修改密码，选购图书，查询交易记录等操作。</li>
+<li>管理系统。管理员进行修改图书信息，查看全部交易记录等操作。</li>
+</ol>
+<h4 id="2、系统功能"><a href="#2、系统功能" class="headerlink" title="2、系统功能"></a>2、系统功能</h4><p><img src="//yangbin1215.github.io/2019/12/10/计算机网络课程设计/%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84%E5%9B%BE.png" alt="功能结构图"></p>
+<h2 id="3、概念结构设计"><a href="#3、概念结构设计" class="headerlink" title="3、概念结构设计"></a>3、概念结构设计</h2><h4 id="1、实体E-R图"><a href="#1、实体E-R图" class="headerlink" title="1、实体E-R图"></a>1、实体E-R图</h4><p><img src="//yangbin1215.github.io/2019/12/10/计算机网络课程设计/%E5%AE%9E%E4%BD%93E-R%E5%9B%BE.png" alt="实体E-R图"></p>
+<h4 id="2、总E-R图"><a href="#2、总E-R图" class="headerlink" title="2、总E-R图"></a>2、总E-R图</h4><p><img src="//yangbin1215.github.io/2019/12/10/计算机网络课程设计/%E6%80%BBE-R%E5%9B%BE.png" alt="实体E-R图"></p>
+<h2 id="4、逻辑结构设计"><a href="#4、逻辑结构设计" class="headerlink" title="4、逻辑结构设计"></a>4、逻辑结构设计</h2><h2 id="5、物理结构设计"><a href="#5、物理结构设计" class="headerlink" title="5、物理结构设计"></a>5、物理结构设计</h2>]]></content>
       <tags>
         <tag>学习笔记</tag>
       </tags>
@@ -26,9 +34,9 @@
   <entry>
     <title>配置文件</title>
     <url>/2019/12/09/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<a id="more"></a>
+    <content><![CDATA[<h2 id="1、数据库"><a href="#1、数据库" class="headerlink" title="1、数据库"></a>1、数据库</h2><a id="more"></a>
 
-<h2 id="1、数据库"><a href="#1、数据库" class="headerlink" title="1、数据库"></a>1、数据库</h2><h3 id="1、连接MySQL"><a href="#1、连接MySQL" class="headerlink" title="1、连接MySQL"></a>1、连接MySQL</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  datasource:</span></span><br><span class="line"><span class="attr">    driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="attr">    username:</span> <span class="string">username</span></span><br><span class="line"><span class="attr">    password:</span> <span class="string">password</span></span><br><span class="line"><span class="attr">    url:</span> <span class="attr">jdbc:mysql://localhost:3306/databasename?useUnicode=true&amp;characterEncoding=UTF8&amp;serverTimezone=UTC</span></span><br></pre></td></tr></table></figure>
+<h3 id="1、连接MySQL"><a href="#1、连接MySQL" class="headerlink" title="1、连接MySQL"></a>1、连接MySQL</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  datasource:</span></span><br><span class="line"><span class="attr">    driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line"><span class="attr">    username:</span> <span class="string">username</span></span><br><span class="line"><span class="attr">    password:</span> <span class="string">password</span></span><br><span class="line"><span class="attr">    url:</span> <span class="attr">jdbc:mysql://localhost:3306/databasename?useUnicode=true&amp;characterEncoding=UTF8&amp;serverTimezone=UTC</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="2、MyBatis配置"><a href="#2、MyBatis配置" class="headerlink" title="2、MyBatis配置"></a>2、MyBatis配置</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE mapper</span></span><br><span class="line"><span class="meta">        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"</span></span><br><span class="line"><span class="meta">        "http://mybatis.org/dtd/mybatis-3-mapper.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">"com.example.demo.mapper.UserMapper"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"getUser"</span> <span class="attr">resultType</span>=<span class="string">"com.example.demo.pojo.Course"</span>&gt;</span></span><br><span class="line">       SELECT * FROM uesr WHERE `name` = #&#123;name&#125;;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
